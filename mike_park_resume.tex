@@ -1,0 +1,137 @@
+\documentclass{resume}
+
+\usepackage{amssymb}
+\usepackage{url}
+
+\renewcommand{\categoryfont}{\sc}
+
+%
+% set the space used for category titles here:
+% use the same value for oddsidemargin and marginparwidth [the latter 
+% 		will be reset to account for marginparsep]
+% 
+\setlength{\oddsidemargin}{1.1in}
+\setlength{\marginparwidth}{1.1in}
+% 
+% calculate other dimensions [textwidth and evensidemargin] 
+% in function of oddsidemargin and marginparwidth: 
+% would be nicer to put in the class file...
+%
+\addtolength{\marginparwidth}{-\marginparsep}
+ \setlength{\evensidemargin}{\oddsidemargin}
+ \setlength{\textwidth}{\paperwidth}
+ \addtolength{\textwidth}{-2in}
+ \addtolength{\textwidth}{-2\oddsidemargin}
+ \addtolength{\textwidth}{\marginparwidth}
+ \addtolength{\textwidth}{\marginparsep}
+%
+%
+\setlength{\topmargin}{-0.5in}
+%
+%
+\renewcommand{\labelcitem}{$\rhd$}
+\renewcommand{\labelitemi}{$\cdot$}
+\newcommand{\first}{$1^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
+
+\author{~~~~~~Michael Andrew Park}
+% ------ Address --------------------------------------------------------
+
+\address{{
+         Computational AeroSciences Branch\\
+	 NASA Langley Research Center\\
+         Mail Stop 128\\
+	 Hampton, VA 23508\\
+	 Office +1 (757) 864-6604\\
+	 \mbox{\small\tt Mike.Park@NASA.gov}
+        }}
+
+\begin{document}
+\maketitle
+
+% ------- Education ---------------------------------------------------
+
+\begin{category}{Education}
+\citem{Massachusetts Institute of Technology}, Cambridge, MA.\\
+Ph.D. in Computational Fluid Dynamics, Department of Aeronautics and Astronautics,  GPA 4.66 of 5.00, September 2008.
+\citem{NASA Langley / George Washington University}, Hampton, VA.\\
+Joint Institute for the Advancement of Flight Sciences
+M.S., Aeronautical Engineering, GPA 3.28 of 4.00, August 2000.
+\citem{University of Southern California}, Los Angeles, CA.\\
+B.S., Aerospace Engineering, GPA 3.48 of 4.00, May 1998.
+\end{category}
+
+% --------- Research ----------------------------------------------------
+
+\begin{category}{Research interests}
+\citemnobullet 
+Computational Fluid Dynamics (CFD) flow and adjoint
+solver development for analysis, solution adaptation, and design;
+anisotropic grid adaptation mechanics;
+high-performance computing;
+CFD application;
+sonic boom prediction;
+collaborative software development.
+\end{category}
+
+\begin{category}{Skills}
+\citemnobullet 
+C, Fortran, MATLAB, Ruby, Git, Subversion, GNU Autotools, \LaTeX.
+\end{category}
+
+\begin{category}{Work Experience}
+\citem{Research Scientist}, NASA Langley Computational AeroSciences Branch;
+September 2000--present.
+Implemented a three-dimensional output (adjoint) based error
+estimation and adaptation scheme in FUN3D.%
+\footnote{\url{http://fun3d.larc.nasa.gov}, an unstructured CFD simulation tool with adjoint solver capable of analysis, design, and grid adaptation
+across all flow speed regimes} 
+Developed a parallel, anisotropic grid adaptation
+library that is
+developed test-first and contains a direct link to CAD geometry.
+Implemented Message Passing Interface (MPI) communication in FUN3D.
+Software manager for FUN3D and established the FUN3D distributed version 
+control system with automated quarantine build and test
+for collaborative team software development.
+Supports numerous FUN3D users in government, industry, and academia with CFD
+consultation for
+sonic boom prediction, propulsion effects, ground vehicle performance,
+and grid adaptation.
+Provided the summary and statistical analysis of the
+AIAA Sonic Boom Predication Workshops as Co-chair,
+participant, and technical lead. 
+Participated in the AIAA Drag Prediction,
+Supersonic Shock-Boundary Layer Interaction,
+and High Lift Prediction Workshops with output-adaptive grid methods.
+Performed turbulent eddy resolving calculations as part of the F-16XL
+Cranked-Arrow Wing Aerodynamics Project International (CAWAPI).
+
+\citem{Research Assistant} Langley Multidisciplinary Optimization Branch;
+September 1998--August 2000.
+Applied the ADIFOR (Automatic Differentiation in FORTRAN) tool to
+CFL3D, a structured grid, Navier-Stokes CFD code
+for stability and control derivatives.
+
+\citem{Co-op Flight Test Engineer} 
+NASA Dryden Flight Research Center Aerodynamics, Propulsion, and Controls
+Branches; September 1995--August 1997. 
+Improved air data reconstruction for F-18 HARV (High Alpha
+Research Vehicle). Supported the Linear Aerospike
+SR-71 Experiment (LASRE) with supersonic wind tunnel testing and
+computational flow solutions for stability and control prediction.
+Programmed a graphical modern control law design tool in MATLAB with
+application to the Hyper-X hypersonic free flyer.
+Explored alternative trajectories for
+Hyper-X booster and free flyer separation.
+
+
+\end{category}
+
+% -------- Reference --------------------------------------------
+
+\begin{category}{References, Publications} 
+\citemnobullet Available on request.
+\end{category}
+
+\end{document}

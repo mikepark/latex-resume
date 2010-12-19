@@ -1,0 +1,9 @@
+Mike Park obtained his bachelor's degree at the University of Southern
+California. He attended the George Washington University and NASA
+Langley Joint Institute for the Advancement of Flight Sciences for his
+master's degree. He earned a Ph.D. in Computation Fluid Mechanics from
+the Massachusetts Institute of Technology and is currently employed by
+the NASA Langley Research Center as a FUN3D developer in the
+Computational AeroSciences Branch. His research interests include
+adjoint methods for grid adaptation and sonic boom prediction.
+
